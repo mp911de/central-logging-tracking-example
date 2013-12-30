@@ -27,7 +27,6 @@
 
     <root>
         <priority value="INFO" />
-        <appender-ref ref="sysout" />
         <appender-ref ref="gelf" />
     </root>
 

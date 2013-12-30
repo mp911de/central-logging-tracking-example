@@ -28,7 +28,10 @@ public class RequestTrackingHeaderRestInterceptor implements ClientExecutionInte
 
             ctx.getRequest().header(WebTracking.DELEGATION_ROOT_REQUEST_ID, data.rootRequestId);
             ctx.getRequest().header(WebTracking.DELEGATION_ROOT_SESSION_ID, data.rootSessionId);
-            ctx.getRequest().header(WebTracking.DELEGATION_ROOT_USER_ID, data.userName);
+            if (data.userName != null)
+            {
+                ctx.getRequest().header(WebTracking.DELEGATION_ROOT_USER_ID, data.userName);
+            }
         }
 
         return ctx.proceed();
