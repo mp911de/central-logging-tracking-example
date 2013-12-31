@@ -28,3 +28,9 @@ The magical thing is not just passing request id's or session id's around. The b
 of logging. This allows you to correlate the requests. So you can see in one place, which log messages were produced during the user session/the user request
 or even machine requests (depending on who your users are).
 
+
+
+More
+----------
+See http://www.paluch.biz/blog/91-tracking-requests-in-a-distributed-environment.html for more details.
+
